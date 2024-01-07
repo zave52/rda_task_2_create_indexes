@@ -34,10 +34,6 @@ jobs:
     
     - name: Check the test results 
       run: |
-        echo "checking the test log:" 
-        cat log.txt
+        echo "checking the test log:"
         errors=$(cat log.txt | grep "^Error")
-        echo $errors
-        trimmedErrors=$(echo $errors | tr -d ' ')
-        if [ -z "$trimmedErrors" ]; then echo $errors && exit 1; fi
-    
+        if [ -n "$errors" ]; then echo $errors && exit 1; fi

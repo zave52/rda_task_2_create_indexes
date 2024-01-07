@@ -35,5 +35,6 @@ jobs:
     - name: Check the test results 
       run: |
         errors=$(cat log.txt | grep "^Error")
-        if [ -z "$errors" ]; then echo $errors && exit 1; fi
+        trimmedErrors=$(echo $errors | tr -d ' ')
+        if [ -z "$trimmedErrors" ]; then echo $errors && exit 1; fi
     

@@ -37,6 +37,7 @@ jobs:
         echo "checking the test log:" 
         cat log.txt
         errors=$(cat log.txt | grep "^Error")
+        echo $errors
         trimmedErrors=$(echo $errors | tr -d ' ')
         if [ -z "$trimmedErrors" ]; then echo $errors && exit 1; fi
     

@@ -40,7 +40,7 @@ In this task, you need to analyze the online shop usage and, based on that, crea
 
 
 1. Connect to your database server and create the `ShopDB` database using the SQL script in the `create-database.sql` file.
-2. Analyze the [usage scenario above](##online-shop-usage-scenarios) and create indexes for the tables and columns, which, in your opinion, require that. Save the code for creating indexes into the `task.sql` file and submit the solution for review. Indexes should be named the same as the columns for which you create the indexes. 
+2. Analyze the [usage scenario above](#online-shop-usage-scenarios) and create indexes for the tables and columns, which, in your opinion, require that. Save the code for creating indexes into the `task.sql` file and submit the solution for review. Indexes should be named the same as the columns for which you create the indexes. 
 
 
 ### How to Test Yourself
